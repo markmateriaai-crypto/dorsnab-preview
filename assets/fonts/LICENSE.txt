@@ -1,18 +1,8 @@
-Шрифты этого сайта распространяются по лицензии SIL Open Font License 1.1
-(https://openfontlicense.org). Лицензия разрешает размещение файлов
-на собственном сервере, в том числе в коммерческом проекте.
+IBM Plex Sans, Copyright 2017 IBM Corp.
+Лицензия SIL Open Font License 1.1, полный текст: IBM-Plex-OFL.txt.
 
-Unbounded        (c) Nikita Kanarev, Kateryna Korolevtseva
-Golos Text       (c) Paratype
-JetBrains Mono   (c) JetBrains s.r.o.
-
-Файлы урезаны до используемых знаков: базовая латиница, кириллица,
-цифры, знаки препинания, стрелки и градус. Полные версии:
-https://fonts.google.com/specimen/Unbounded
-https://fonts.google.com/specimen/Golos+Text
-https://fonts.google.com/specimen/JetBrains+Mono
-
-Полные оригинальные тексты лицензий и copyright:
-Unbounded-OFL.txt
-Golos-Text-OFL.txt
-JetBrains-Mono-OFL.txt
+Файлы WOFF2 Cyrillic, Latin1 и Pi взяты без изменений из официального
+репозитория IBM: https://github.com/IBM/plex
+Коммит: 78cd4223d8de9fcb78cba84eadecb269c56093c5.
+Используются два начертания: Regular 400 и SemiBold 600.
+Локальное размещение, внешние запросы за шрифтами отсутствуют.

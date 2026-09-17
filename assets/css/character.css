@@ -3,18 +3,18 @@
 .hero-material::before, .hero-material::after { content: none; background: none; }
 .material-masthead { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
 .material-masthead p { margin: 0; }
-.material-index { font: var(--t-sluzh)/1.5 var(--f-mono); color: var(--text-dim); }
+.material-index { font: var(--t-sluzh)/1.5 var(--f-label); color: var(--text-dim); }
 .material-hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 2.5rem; }
 .material-copy { min-width: 0; position: relative; z-index: 1; }
-.hero-material h1 { font-size: clamp(2.4rem, 5.55vw, 5rem); line-height: 1.01; letter-spacing: -.055em; max-width: none; margin: 0; text-wrap: initial; }
+.hero-material h1 { font-size: clamp(2.75rem, 6.4vw, 5.8rem); line-height: 1.03; letter-spacing: 0; max-width: none; margin: 0; text-wrap: initial; }
 .material-period { color: var(--concrete); }
-.material-tagline { font: 400 clamp(1.5rem, 2.8vw, 2.5rem)/1.12 var(--f-text); letter-spacing: -.025em; margin-top: 1.7rem; }
+.material-tagline { font: 400 clamp(1.5rem, 2.8vw, 2.5rem)/1.12 var(--f-text); letter-spacing: 0; margin-top: 1.7rem; }
 .hero-material .hero-lead { max-width: 26em; margin-top: 1.5rem; font-size: var(--t-korp); }
 .hero-material .hero-cta { align-items: center; gap: 1.4rem; margin-top: 1.8rem; }
 .hero-material .btn-pink { gap: 1.5rem; }
 .hero-material .btn-line { font-size: var(--t-vtor); }
 .material-model { position: relative; margin: 0; min-width: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
-.material-model-head { display: flex; justify-content: space-between; padding: .8rem 0; border-top: 1px solid var(--line-strong); font: var(--t-sluzh)/1.5 var(--f-mono); color: var(--text-dim); }
+.material-model-head { display: flex; justify-content: space-between; padding: .8rem 0; border-top: 1px solid var(--line-strong); font: var(--t-sluzh)/1.5 var(--f-label); color: var(--text-dim); }
 .material-model-head > :last-child { color: var(--concrete); font: 2rem/1 var(--f-text); }
 .road-model { display: block; width: 100%; height: auto; overflow: visible; }
 .road-surface, .road-reinforcement { transition: transform .7s cubic-bezier(.2,.7,.2,1), opacity .7s; }
@@ -22,14 +22,14 @@
 .material-model[data-layer='geo'] .road-reinforcement { transform: translateY(-13px); }
 .material-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--line-strong); margin-top: .5rem; }
 .material-switch[hidden] { display: none; }
-.material-switch button { display: flex; gap: .85rem; align-items: center; padding: 1rem .6rem; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--text-dim); font: var(--t-sluzh)/1.5 var(--f-mono); text-align: left; cursor: pointer; transition: color .2s, border-color .2s; }
+.material-switch button { display: flex; gap: .85rem; align-items: center; padding: 1rem .6rem; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--text-dim); font: var(--t-sluzh)/1.5 var(--f-label); text-align: left; cursor: pointer; transition: color .2s, border-color .2s; }
 .material-switch button span { font: var(--t-vtor)/1.4 var(--f-text); }
 .material-switch button[aria-pressed='true'] { color: var(--text); border-bottom-color: var(--pink); }
-.material-model-note { display: grid; gap: .3rem; margin-top: .9rem; font: var(--t-mark)/1.5 var(--f-mono); color: var(--text-quiet); min-height: 4.5em; }
+.material-model-note { display: grid; gap: .3rem; margin-top: .9rem; font: var(--t-mark)/1.5 var(--f-label); color: var(--text-quiet); min-height: 4.5em; }
 .material-explanation { font: var(--t-vtor)/1.5 var(--f-text); color: var(--concrete); }
 .hero-verification { display: flex; align-items: center; gap: 3rem; justify-content: space-between; border-top: 1px solid var(--line-strong); padding: 1.5rem 0; }
 .hero-verification p { display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 34em); gap: 2rem; margin: 0; color: var(--text-dim); font-size: var(--t-vtor); line-height: 1.45; }
-.verification-label { color: var(--text); font: var(--t-sluzh)/1.5 var(--f-mono); }
+.verification-label { color: var(--text); font: var(--t-sluzh)/1.5 var(--f-label); }
 .hero-verification > a { flex-shrink: 0; }
 .page-home .facts { margin: 0; padding-block: 2rem 1.5rem; background: transparent; }
 .page-home .facts-grid { max-width: none; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
@@ -42,7 +42,7 @@
 .page-home .mission-in { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 2rem 5rem; }
 .mission-heading { grid-row: 1 / 3; }
 .mission-heading .eyebrow { margin-bottom: 1.5rem; }
-.mission-heading h2 { font-size: clamp(1.75rem, 3.3vw, 2.85rem); line-height: 1.12; letter-spacing: -.04em; }
+.mission-heading h2 { font-size: clamp(1.75rem, 3.3vw, 2.85rem); line-height: 1.12; letter-spacing: 0; }
 .page-home .mission-t { font: var(--t-korp)/1.6 var(--f-text); color: var(--text-dim); max-width: 33em; }
 .page-home .mission-t b { font-weight: 600; }
 .page-home .mission-s { font-size: var(--t-vtor); max-width: 34em; }
@@ -56,16 +56,16 @@
 .page-home .material-dossier { --mat: none; min-width: 0; border: 0; background: transparent; padding-block: 2rem 3.5rem; }
 .page-home .material-dossier + .material-dossier { padding-top: 4rem; border-top: 1px solid var(--line-strong); }
 .page-home .material-dossier .group-in { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 1.5rem 5rem; }
-.page-home .material-dossier .group-num { grid-column: 1; grid-row: 1; font: var(--t-sluzh)/1.4 var(--f-mono); color: var(--text-dim); align-self: start; }
+.page-home .material-dossier .group-num { grid-column: 1; grid-row: 1; font: var(--t-sluzh)/1.4 var(--f-label); color: var(--text-dim); align-self: start; }
 .page-home .material-dossier .group-num::before { content: none; }
-.page-home .material-dossier .group-num span { display: block; font: 700 clamp(2.5rem, 6vw, 5.3rem)/1.05 var(--f-display); letter-spacing: -.05em; color: var(--text); margin-top: .65rem; }
+.page-home .material-dossier .group-num span { display: block; font: 600 clamp(2.5rem, 6vw, 5.3rem)/1.05 var(--f-display); letter-spacing: 0; color: var(--text); margin-top: .65rem; }
 .page-home .material-dossier .group-in > div:not([class]) { grid-column: 2; grid-row: 1 / 3; }
 .page-home .material-dossier .norms { grid-column: 2; grid-row: 3; background: transparent; background-image: none; border-radius: 0; border: 0; border-top: 1px solid var(--line-strong); padding: 1.3rem 0 0; box-shadow: none; }
 .page-home .material-dossier .norms ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 1.5rem; margin-block: 1rem 1.5rem; }
 .page-home .material-dossier .norms li { font-size: var(--t-vspom); margin: 0; }
 .material-evidence { grid-column: 1; grid-row: 2 / 4; margin: 0; align-self: start; }
 .material-evidence img { width: 100%; height: auto; border-radius: var(--r-4); }
-.material-evidence figcaption { border-top: 1px solid var(--line-strong); margin-top: 1rem; padding-top: .7rem; font: var(--t-mark)/1.5 var(--f-mono); color: var(--text-dim); }
+.material-evidence figcaption { border-top: 1px solid var(--line-strong); margin-top: 1rem; padding-top: .7rem; font: var(--t-mark)/1.5 var(--f-label); color: var(--text-dim); }
 .material-specs { border-block: 1px solid var(--line-strong); margin-top: 1.5rem; }
 .material-specs summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; list-style: none; padding-block: 1rem; min-height: 48px; color: var(--text); font-size: var(--t-vtor); }
 .material-specs summary::-webkit-details-marker { display: none; }
@@ -75,7 +75,7 @@
 .material-specs-body .prop:first-child { border-top: 0; }
 .geo-specimen { grid-column: 1; grid-row: 2 / 4; position: relative; min-height: 22rem; display: grid; align-content: end; padding: 1.5rem; overflow: hidden; border: 1px solid var(--line-strong); border-radius: var(--r-4); background: #192021; }
 .geo-specimen-grid { position: absolute; width: 110%; height: 140%; left: -5%; top: -28%; transform: perspective(550px) rotateX(42deg) rotateZ(-23deg); background: repeating-linear-gradient(0deg, transparent 0 30px, #86918a 30px 33px), repeating-linear-gradient(90deg, transparent 0 30px, #86918a 30px 33px); mask-image: linear-gradient(#000 25%, transparent 85%); }
-.geo-specimen > span { position: relative; color: var(--concrete); font: var(--t-vtor)/1.4 var(--f-mono); }
+.geo-specimen > span { position: relative; color: var(--concrete); font: var(--t-vtor)/1.4 var(--f-label); }
 .page-home .material-dossier[data-material='geo'] .group-in { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
 .page-home .material-dossier[data-material='geo'] .group-in > div:not([class]), .page-home .material-dossier[data-material='geo'] .norms { grid-column: 1; }
 .page-home .material-dossier[data-material='geo'] .group-num, .page-home .material-dossier[data-material='geo'] .geo-specimen { grid-column: 2; }
@@ -83,18 +83,18 @@
 .page-home .anchor-row { margin-top: 1rem; }
 .page-home .audience-section { border: 0; background: transparent; padding-top: 4rem; }
 .page-home .audience-section .sec-head { border-bottom: 1px solid var(--line-strong); padding-bottom: 2rem; }
-.page-home .audience-section .sec-num--big, .page-home .principles-section .sec-num--big { color: var(--text-dim); font: var(--t-sluzh)/1.5 var(--f-mono); letter-spacing: .04em; }
+.page-home .audience-section .sec-num--big, .page-home .principles-section .sec-num--big { color: var(--text-dim); font: var(--t-sluzh)/1.5 var(--f-label); letter-spacing: .04em; }
 .page-home .audience-section .list-rows { border: 0; background: transparent; box-shadow: none; border-radius: 0; }
 .page-home .audience-section .list-row { padding-block: 1.6rem; background: transparent; }
 .page-home .audience-section .list-key { font-size: var(--t-karta); }
 .page-home .objects { margin-top: 2rem; padding-block: 4rem; background: #e7e9ed; color: #19201e; --text: #19201e; --text-dim: #454e49; --text-quiet: #454e49; --concrete: #19201e; --line: #b0b8af; --line-strong: #8d988e; --okno-bg: transparent; }
 .page-home .objects .wrap-wide { width: min(100% - 2.5rem, var(--wrap)); }
 .page-home .objects .chapter { grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr); gap: 5rem; }
-.page-home .objects .sec-title { font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -.05em; }
+.page-home .objects .sec-title { font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: 0; }
 .page-home .objects .road-list { border: 0; border-radius: 0; box-shadow: none; background: transparent; }
 .page-home .objects .road { display: block; padding: 1.5rem 0; background: transparent; }
 .page-home .objects .road:first-child { padding-top: 0; }
-.page-home .objects .road-code { font: 600 clamp(1.5rem, 2.6vw, 2.3rem)/1.15 var(--f-text); letter-spacing: -.035em; }
+.page-home .objects .road-code { font: 600 clamp(1.5rem, 2.6vw, 2.3rem)/1.15 var(--f-text); letter-spacing: 0; }
 .page-home .objects .road-place { margin-top: .5rem; }
 .page-home .objects .road-km { margin-top: .9rem; justify-content: start; gap: .5rem 1rem; }
 .page-home .objects .km-mark { color: #454e49; }
@@ -116,12 +116,12 @@
 .page-home .documents-section .sec-title { margin-block: 1rem; }
 .page-home .documents-section .sec-more { grid-column: 2; margin: 0; }
 .page-home .request { border-radius: var(--r-4) var(--r-4) 0 0; padding-top: 4rem; }
-.page-home .request .sec-title { font-size: clamp(2rem, 4vw, 3.6rem); max-width: 9em; letter-spacing: -.045em; }
-.foot .footer-signature { text-decoration: none; display: flex; justify-content: space-between; align-items: baseline; font: 800 clamp(2.5rem, 10.8vw, 9.5rem)/1 var(--f-display); letter-spacing: -.065em; padding-bottom: 2.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line-strong); color: var(--concrete); }
+.page-home .request .sec-title { font-size: clamp(2rem, 4vw, 3.6rem); max-width: 9em; letter-spacing: 0; }
+.foot .footer-signature { text-decoration: none; display: flex; justify-content: space-between; align-items: baseline; font: 600 clamp(2.5rem, 10.8vw, 9.5rem)/1 var(--f-display); letter-spacing: 0; padding-bottom: 2.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line-strong); color: var(--concrete); }
 .foot .footer-signature span { font: 400 1em/1 var(--f-text); }
 .page-head--split { padding-top: clamp(3rem, 6vw, 6rem); }
 .page-head--split .wrap { position: relative; }
-.page-head--split h1 { letter-spacing: -.045em; }
+.page-head--split h1 { letter-spacing: 0; }
 .page-head--split .crumbs { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line-strong); }
 @media (hover: hover) {
   .material-switch button:hover, .material-specs summary:hover { color: var(--pink); }
@@ -129,7 +129,7 @@
 }
 @media (max-width: 1080px) {
   .req-grid > form { order: 0; }
-  .hero-material h1 { font-size: clamp(2.4rem, 5.4vw, 4.5rem); }
+  .hero-material h1 { font-size: clamp(2.75rem, 6.1vw, 5.25rem); }
   .material-hero-grid { gap: 1.5rem; }
   .hero-material .hero-cta { align-items: start; flex-direction: column; gap: .7rem; }
   .hero-verification p { grid-template-columns: minmax(0, 1fr); gap: .5rem; }
@@ -140,7 +140,7 @@
 @media (max-width: 760px) {
   .material-index { display: none; }
   .material-hero-grid { grid-template-columns: minmax(0, 1fr); padding-top: 2rem; gap: 2.5rem; }
-  .hero-material h1 { font-size: clamp(2rem, 9.45vw, 4.5rem); }
+  .hero-material h1 { font-size: clamp(2.5rem, 11.6vw, 4.5rem); }
   .material-tagline { font-size: 1.8rem; margin-top: 1.3rem; }
   .material-tagline br { display: none; }
   .hero-material .hero-lead { max-width: 32em; }
@@ -212,7 +212,7 @@
 @keyframes specimen-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 .material-model { padding: 1rem 1.2rem .5rem; border: 1px solid var(--line); border-radius: var(--r-4); background: #111315; }
 .material-model-head { border: 0; padding: 0 0 1rem; }
-.material-model-head .material-model-index { font: .8125rem/1.5 var(--f-mono); color: var(--text-dim); }
+.material-model-head .material-model-index { font: .8125rem/1.5 var(--f-label); color: var(--text-dim); }
 .material-model-note { min-height: 4.5em; font-family: var(--f-text); padding-inline: .4rem; }
 .material-tagline { margin-top: 1.5rem; }
 .hero-material .hero-lead { max-width: 27em; }
@@ -220,13 +220,13 @@
 .hero-material .hero-cta .btn-pink { padding-inline: 1.5rem; }
 .hero-material .hero-cta .btn-line { padding-block: .3rem; }
 .page-home .facts { border-top: 1px solid var(--line); padding-block: 2rem; }
-.page-home .fact-n { font-weight: 700; letter-spacing: -.04em; }
+.page-home .fact-n { font-weight: 600; letter-spacing: 0; }
 .page-home .fact-l { max-width: 17em; }
 .page-home .mission { position: relative; padding-top: 0; margin-top: 3rem; }
 .mission-landscape { position: relative; margin: 0; }
 .mission-landscape picture, .mission-landscape img { display: block; width: 100%; }
 .mission-landscape img { height: clamp(260px, 34vw, 500px); object-fit: cover; }
-.mission-landscape figcaption { position: absolute; right: max(1.5rem, calc((100vw - 1320px) / 2)); bottom: 1rem; border-radius: var(--r-1); background: #0d0e10; color: var(--text); font: .8125rem/1.5 var(--f-mono); padding: .5rem .75rem; }
+.mission-landscape figcaption { position: absolute; right: max(1.5rem, calc((100vw - 1320px) / 2)); bottom: 1rem; border-radius: var(--r-1); background: #0d0e10; color: var(--text); font: .8125rem/1.5 var(--f-label); padding: .5rem .75rem; }
 .page-home .mission-in { padding-top: 3.5rem; }
 .mission-heading h2 { font-size: clamp(2rem, 3.7vw, 3.25rem); }
 .page-home .material-dossier .group-in { column-gap: 3rem; }
@@ -235,7 +235,7 @@
 .page-home .material-dossier .group-num span { font-size: clamp(2.5rem, 5vw, 4.5rem); }
 .geo-specimen { display: block; min-height: 0; padding: 0; margin: 0; background: #111315; }
 .geo-specimen picture, .geo-specimen img { display: block; width: 100%; height: auto; }
-.geo-specimen figcaption { font: .8125rem/1.5 var(--f-mono); padding: 1rem 1.2rem; border-top: 1px solid var(--line); color: var(--text-dim); }
+.geo-specimen figcaption { font: .8125rem/1.5 var(--f-label); padding: 1rem 1.2rem; border-top: 1px solid var(--line); color: var(--text-dim); }
 .page-home .audience-section > .wrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.3fr); gap: 3rem; align-items: start; }
 .page-home .audience-section .sec-head { display: block; margin: 0; border: 0; position: sticky; top: 7rem; }
 .page-home .audience-section .sec-title { margin-block: 1rem 1.5rem; font-size: clamp(1.8rem, 3vw, 2.6rem); }
@@ -314,7 +314,7 @@
 .company-strip { border-block: 1px solid var(--line-strong); padding-block: 1.8rem; }
 .company-strip .wrap { display: flex; gap: 1.5rem 3rem; align-items: center; flex-wrap: wrap; }
 .company-strip p { font-weight: 600; margin-right: auto; }
-.company-strip p span { display: block; font: .8125rem/1.6 var(--f-mono); color: var(--text-dim); }
+.company-strip p span { display: block; font: .8125rem/1.6 var(--f-label); color: var(--text-dim); }
 @media (max-width:760px) {
   .page-home .plogos { grid-template-columns: minmax(0, 1fr); }
   .page-home .plogo-tile img { max-height: 44px; }
