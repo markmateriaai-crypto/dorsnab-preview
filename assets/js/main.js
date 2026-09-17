@@ -183,30 +183,6 @@
     }
   });
 
-  /* Материал в конструкции: управление доступно мышью и клавиатурой. */
-  var model = document.querySelector('.material-model');
-  if (model) {
-    var choices = model.querySelectorAll('[data-material-choice]');
-    var explanation = model.querySelector('.material-explanation');
-    choices.forEach(function (button) {
-      button.addEventListener('click', function () {
-        var layer = button.getAttribute('data-material-choice');
-        model.setAttribute('data-layer', layer);
-        model.querySelectorAll('[data-material-image]').forEach(function (picture) {
-          picture.hidden = picture.getAttribute('data-material-image') !== layer;
-        });
-        choices.forEach(function (choice) {
-          choice.setAttribute('aria-pressed', String(choice === button));
-        });
-        explanation.textContent = layer === 'geo'
-          ? 'Геосинтетика применяется для армирования конструкции.'
-          : 'АДМ-2 вводится в асфальтобетонную смесь.';
-      });
-    });
-    explanation.setAttribute('aria-live', 'polite');
-    model.querySelector('.material-switch').hidden = false;
-  }
-
   /* ---- 3. Формы заявки ----
      Заявка уходит на сервер (otpravit.php), а не в почтовую программу
      посетителя. Без JavaScript форма отправляется обычным POST на тот же
@@ -505,9 +481,9 @@
 
     document.querySelectorAll('[data-istochnik]').forEach(function (a) {
       /* Общая кнопка на странице с формой поле не трогает. Прежний код
-         затирал ею уже определённый раздел: человек нажал «геосинтетика»,
+         затирал ею уже определённый раздел: человек нажал «модификатор»,
          пролистал наверх, нажал кнопку шапки - и менеджеру уезжало «шапка»
-         вместо геосинтетики. Без клика в поле лежит название страницы,
+         вместо модификатора. Без клика в поле лежит название страницы,
          проставленное разметкой, и оно всегда полезнее слова «шапка». */
       if (obshchaya(a)) return;
       a.addEventListener('click', function () {

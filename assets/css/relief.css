@@ -45,14 +45,6 @@
     transition-duration: .18s;
     will-change: transform;
   }
-  .geo-specimen .relief-stage {
-    --relief-base-x: 7deg;
-    --relief-base-y: 9deg;
-    --relief-base-z: 1.5deg;
-    padding-block: 1px;
-  }
-  .geo-specimen .relief-object { margin: 22px 24px 34px; }
-  .geo-specimen .relief-object img { border-radius: inherit; }
   .award-scan { perspective: 1000px; }
   .award-scan-in {
     position: relative;
@@ -79,8 +71,6 @@
   @media (max-width: 760px) {
     .relief-stage { --relief-base-x: 5deg; --relief-base-y: -6deg; }
     .relief-object { margin: 10px 12px 22px; }
-    .geo-specimen .relief-stage { --relief-base-x: 5deg; --relief-base-y: 6deg; }
-    .geo-specimen .relief-object { margin: 16px 18px 26px; }
     .award-scan-in { transform: rotateY(-5deg) rotateZ(-2deg); }
     .page-home #priznanie .award-scan-in { width: 88px; flex-basis: 88px; }
   }

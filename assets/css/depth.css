@@ -15,7 +15,7 @@
 .page-home .mission {
   background: radial-gradient(ellipse 70% 48% at 0% 100%, rgba(125, 137, 152, .07), transparent 78%);
 }
-.material-evidence img, .geo-specimen {
+.material-evidence img{
   box-shadow: 0 10px 20px -14px rgba(2, 4, 7, .9), 0 32px 54px -34px rgba(2, 4, 7, .75);
 }
 .page-home .objects {

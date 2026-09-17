@@ -1,0 +1,99 @@
+/* Модификатор из шин: предметная подача и индустриальный портрет. */
+.tyre-hero { position: relative; isolation: isolate; min-height: min(840px, calc(100svh - 90px)); background: #101113; overflow: clip; }
+.tyre-hero-image { position: absolute; z-index: -1; inset: 0; margin: 0; }
+.tyre-hero-image picture, .tyre-hero-image img { display: block; width: 100%; height: 100%; }
+.tyre-hero-image img { object-fit: cover; object-position: 70% 50%; }
+.tyre-hero-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #0d0e10 0%, rgba(13,14,16,.96) 18%, rgba(13,14,16,.75) 38%, rgba(13,14,16,.08) 65%), linear-gradient(0deg, #0d0e10 0%, transparent 24%); }
+.tyre-hero-image figcaption { position: absolute; right: max(3vw, calc((100vw - 1320px)/2)); bottom: 28px; z-index: 1; font-size: 12px; color: #c8ccd2; background: #0d0e10d9; padding: 5px 9px; }
+.tyre-hero-in { position: relative; padding-block: clamp(48px, 7vw, 110px) 30px; min-height: inherit; display: flex; flex-direction: column; align-items: flex-start; }
+.tyre-hero .eyebrow { color: #d5d7dc; margin: 0 0 40px; font-size: 13px; letter-spacing: .07em; }
+.tyre-hero h1 { font: 600 clamp(52px, 5.7vw, 84px)/1.04 var(--f-display); max-width: 9em; letter-spacing: -.015em; margin: 0; text-wrap: initial; }
+.tyre-hero h1 > span { color: var(--pink); }
+.tyre-hero-lead { font-size: clamp(17px, 1.6vw, 22px); line-height: 1.5; color: #d5d7dc; max-width: 24em; margin-top: 30px; }
+.tyre-hero .hero-cta { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; margin-block: 32px 60px; }
+.tyre-hero .btn-line { color: var(--text); }
+.tyre-scroll { margin-top: auto; font-size: 14px; color: #c8ccd2; display: flex; gap: 16px; align-items: center; text-decoration: none; }
+.tyre-scroll > span { font-size: 24px; }
+.material-route { background: #e6e5e1; color: #222427; padding-block: clamp(52px,7vw,98px); --text-dim: #55585d; --text: #222427; --text-quiet: #55585d; }
+.route-head { display: grid; grid-template-columns: minmax(0, .55fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.route-head .eyebrow { font-size: 13px; color: #55585d; margin-top: 8px; }
+.route-head h2, .modifier-product h2, .modifier-documents h2, .modifier-about h2 { font: 400 clamp(32px, 4vw, 58px)/1.1 var(--f-display); letter-spacing: -.015em; }
+.route-head > p:last-child { font-size: 18px; line-height: 1.65; margin-top: 7px; color: #45494e; }
+.route-steps { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 40px; margin-top: 60px; }
+.route-steps li { border-top: 1px solid #969996; padding-top: 20px; }
+.route-index { font-size: 13px; color: #55585d; }
+.route-steps h3 { font-size: clamp(24px,2.7vw,38px); font-weight: 400; line-height: 1.2; margin-block: 22px 12px; overflow-wrap: anywhere; }
+.route-steps p { font-size: 16px; color: #45494e; max-width: 22em; line-height: 1.55; overflow-wrap: anywhere; }
+.modifier-product { padding-block: clamp(60px,8vw,120px); }
+.modifier-product-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: clamp(32px,7vw,100px); align-items: start; }
+.modifier-product-copy .eyebrow, .modifier-documents .eyebrow, .modifier-about .eyebrow { margin-bottom: 25px; }
+.modifier-product-copy h2 { margin-bottom: 28px; }
+.modifier-product-lead { max-width: 28em; font-size: 19px; line-height: 1.65; color: var(--concrete); }
+.modifier-properties { margin-block: 36px 32px; }
+.modifier-properties > div { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 15px; padding-block: 15px; border-top: 1px solid var(--line-strong); font-size: 15px; }
+.modifier-properties dt { color: var(--text-dim); }
+.modifier-properties dd { margin: 0; overflow-wrap: anywhere; }
+.modifier-stock { margin: 8px 0 0; min-width: 0; }
+.modifier-stock picture { display: block; overflow: hidden; border-radius: 6px; background: #24272d; box-shadow: 0 28px 70px -32px #000; }
+.modifier-stock img { width: 100%; height: auto; display: block; }
+.modifier-stock figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 20px; font: 13px/1.5 var(--f-text); color: var(--text-dim); margin-top: 15px; }
+.stock-note { border-top: 1px solid var(--line-strong); margin-top: 40px; padding-top: 25px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.stock-note > span { font: 400 clamp(28px,3vw,44px)/1.12 var(--f-text); color: var(--concrete); min-width: 0; overflow-wrap: anywhere; }
+.stock-note > a { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; border: 1px solid var(--line-strong); text-decoration: none; font-size: 27px; flex-shrink: 0; }
+.modifier-documents { border-top: 1px solid var(--line-strong); padding-block: 70px 95px; }
+.modifier-docs-grid { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.3fr); gap: 70px; }
+.modifier-docs-grid > div:first-child > p:last-child { font-size: 16px; color: var(--text-dim); max-width: 23em; margin-top: 25px; }
+.modifier-doc-links > a { display: grid; grid-template-columns: 24px minmax(0,1fr) 54px; align-items: start; gap: 22px; padding: 25px 0; border-top: 1px solid var(--line-strong); text-decoration: none; }
+.doc-order, .doc-format { font-size: 13px; color: var(--text-dim); padding-top: 5px; }
+.doc-format { text-align: right; }
+.modifier-doc-links b { font-size: 22px; font-weight: 400; line-height: 1.3; }
+.modifier-doc-links small { display: block; color: var(--text-dim); font-size: 14px; line-height: 1.5; margin-top: 10px; }
+.page-home .request { border-top: 1px solid var(--line-strong); border-radius: 0; padding-block: 80px; }
+.modifier-about { padding-top: 30px; }
+.modifier-about .modifier-product-copy > p { margin-top: 20px; }
+.modifier-about-details { padding-top: 0; }
+.about-detail-row { display: grid; grid-template-columns: 40px minmax(0,.7fr) minmax(0,1.3fr) minmax(0,.6fr); align-items: start; gap: 30px; padding-block: 32px; border-top: 1px solid var(--line-strong); }
+.about-detail-row > span { font-size: 13px; color: var(--text-dim); }
+.about-detail-row h2 { font-size: 28px; line-height: 1.2; }
+.about-detail-row p { color: var(--text-dim); font-size: 16px; line-height: 1.6; }
+.about-detail-row a { font-size: 14px; }
+.page-product .page-head h1 { max-width: 17em; }
+.page-product .group-num { color: var(--text-dim); }
+@media (hover:hover) { .modifier-doc-links a:hover b, .tyre-scroll:hover, .stock-note a:hover { color: var(--pink-hover); } }
+@media (min-width:761px) and (max-width:1100px) { .tyre-hero h1 { font-size: 6.7vw; } .route-head { grid-template-columns: minmax(0,1fr) minmax(0,1fr); } .route-head .eyebrow { grid-column: 1/-1; } .modifier-docs-grid { gap: 35px; } .about-detail-row { grid-template-columns: 24px minmax(0,1fr) minmax(0,1.4fr); } .about-detail-row a { grid-column: 3; } }
+@media (max-width:760px) {
+  .tyre-hero { min-height: 0; padding-top: 0; display: flex; flex-direction: column; }
+  .tyre-hero-in { padding-block: 32px 0; display: block; }
+  .tyre-hero .eyebrow { margin-bottom: 22px; font-size: 12px; }
+  .tyre-hero h1 { font-size: clamp(36px, 9.2vw, 66px); letter-spacing: -.02em; max-width: none; }
+  .tyre-hero-lead { font-size: 17px; margin-top: 23px; max-width: 27em; }
+  .desktop-break { display: none; }
+  .tyre-hero .hero-cta { gap: 16px 24px; margin-block: 23px 0; }
+  .tyre-hero .hero-cta .btn { font-size: 14px; padding-inline: 20px; }
+  .tyre-hero .hero-cta .btn-line { font-size: 14px; }
+  .tyre-scroll { display: none; }
+  .tyre-hero-image { position: relative; inset: auto; z-index: auto; order: 2; height: clamp(360px,112vw,660px); margin-top: 10px; }
+  .tyre-hero-image img { object-position: 72% 50%; }
+  .tyre-hero-image::after { background: linear-gradient(180deg, #0d0e10 0%, rgba(13,14,16,.2) 15%, transparent 30%, transparent 77%, #0d0e10 100%); }
+  .tyre-hero-image figcaption { right: 16px; bottom: 14px; font-size: 10px; }
+  .route-head { display: block; }
+  .route-head .eyebrow { margin-bottom: 22px; }
+  .route-head > p:last-child { margin-top: 25px; font-size: 17px; }
+  .route-steps { grid-template-columns: minmax(0,1fr); gap: 25px; margin-top: 36px; }
+  .route-steps li { display: grid; grid-template-columns: minmax(0,.65fr) minmax(0,1fr); column-gap: 20px; }
+  .route-index { grid-column: 1; grid-row: 1 / 3; padding-top: 3px; font-size: 12px; }
+  .route-steps h3 { margin: 0 0 10px; font-size: 24px; }
+  .route-steps p { grid-column: 2; font-size: 15px; }
+  .modifier-product-grid, .modifier-docs-grid { grid-template-columns: minmax(0,1fr); gap: 38px; }
+  .modifier-product-lead { font-size: 17px; }
+  .stock-note { margin-top: 25px; }
+  .modifier-documents { padding-block: 50px 65px; }
+  .modifier-docs-grid h2 br { display: none; }
+  .modifier-doc-links > a { grid-template-columns: 18px minmax(0,1fr) 40px; gap: 14px; }
+  .modifier-doc-links b { font-size: 19px; }
+  .doc-format { font-size: 11px; }
+  .page-home .request { padding-block: 50px; }
+  .about-detail-row { grid-template-columns: 20px minmax(0,1fr); gap: 14px; }
+  .about-detail-row p, .about-detail-row a { grid-column: 2; }
+}
+@media print { .tyre-hero-image { display: none; } .tyre-hero { min-height: 0; } .tyre-hero-in { padding-block: 20px; } .tyre-scroll { display: none; } .route-head, .route-steps, .modifier-product-grid, .modifier-docs-grid { display: block; } }
