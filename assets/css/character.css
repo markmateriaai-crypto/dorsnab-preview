@@ -1,0 +1,338 @@
+/* ДОРСНАБ: материал становится дорогой. */
+.hero-material { padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+.hero-material::before, .hero-material::after { content: none; background: none; }
+.material-masthead { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.material-masthead p { margin: 0; }
+.material-index { font: var(--t-sluzh)/1.5 var(--f-mono); color: var(--text-dim); }
+.material-hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 2.5rem; }
+.material-copy { min-width: 0; position: relative; z-index: 1; }
+.hero-material h1 { font-size: clamp(2.4rem, 5.55vw, 5rem); line-height: 1.01; letter-spacing: -.055em; max-width: none; margin: 0; text-wrap: initial; }
+.material-period { color: var(--concrete); }
+.material-tagline { font: 400 clamp(1.5rem, 2.8vw, 2.5rem)/1.12 var(--f-text); letter-spacing: -.025em; margin-top: 1.7rem; }
+.hero-material .hero-lead { max-width: 26em; margin-top: 1.5rem; font-size: var(--t-korp); }
+.hero-material .hero-cta { align-items: center; gap: 1.4rem; margin-top: 1.8rem; }
+.hero-material .btn-pink { gap: 1.5rem; }
+.hero-material .btn-line { font-size: var(--t-vtor); }
+.material-model { position: relative; margin: 0; min-width: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
+.material-model-head { display: flex; justify-content: space-between; padding: .8rem 0; border-top: 1px solid var(--line-strong); font: var(--t-sluzh)/1.5 var(--f-mono); color: var(--text-dim); }
+.material-model-head > :last-child { color: var(--concrete); font: 2rem/1 var(--f-text); }
+.road-model { display: block; width: 100%; height: auto; overflow: visible; }
+.road-surface, .road-reinforcement { transition: transform .7s cubic-bezier(.2,.7,.2,1), opacity .7s; }
+.material-model[data-layer='geo'] .road-surface { transform: translateY(-20px); opacity: .32; }
+.material-model[data-layer='geo'] .road-reinforcement { transform: translateY(-13px); }
+.material-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--line-strong); margin-top: .5rem; }
+.material-switch[hidden] { display: none; }
+.material-switch button { display: flex; gap: .85rem; align-items: center; padding: 1rem .6rem; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--text-dim); font: var(--t-sluzh)/1.5 var(--f-mono); text-align: left; cursor: pointer; transition: color .2s, border-color .2s; }
+.material-switch button span { font: var(--t-vtor)/1.4 var(--f-text); }
+.material-switch button[aria-pressed='true'] { color: var(--text); border-bottom-color: var(--pink); }
+.material-model-note { display: grid; gap: .3rem; margin-top: .9rem; font: var(--t-mark)/1.5 var(--f-mono); color: var(--text-quiet); min-height: 4.5em; }
+.material-explanation { font: var(--t-vtor)/1.5 var(--f-text); color: var(--concrete); }
+.hero-verification { display: flex; align-items: center; gap: 3rem; justify-content: space-between; border-top: 1px solid var(--line-strong); padding: 1.5rem 0; }
+.hero-verification p { display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 34em); gap: 2rem; margin: 0; color: var(--text-dim); font-size: var(--t-vtor); line-height: 1.45; }
+.verification-label { color: var(--text); font: var(--t-sluzh)/1.5 var(--f-mono); }
+.hero-verification > a { flex-shrink: 0; }
+.page-home .facts { margin: 0; padding-block: 2rem 1.5rem; background: transparent; }
+.page-home .facts-grid { max-width: none; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
+.page-home .fact { display: block; background: none; border: 0; border-radius: 0; box-shadow: none; padding: 0 1.5rem 0 0; border-right: 1px solid var(--line-strong); }
+.page-home .fact:last-child { border: 0; padding-right: 0; }
+.page-home .fact-n { font-size: clamp(1.7rem, 3.1vw, 2.8rem); }
+.page-home .fact-l { margin-top: .8rem; max-width: 15em; }
+.page-home .facts-src { font-size: var(--t-mark); max-width: none; margin-top: 1.5rem; }
+.page-home .mission { background: transparent; border: 0; padding-block: clamp(3rem, 7vw, 6.5rem); }
+.page-home .mission-in { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 2rem 5rem; }
+.mission-heading { grid-row: 1 / 3; }
+.mission-heading .eyebrow { margin-bottom: 1.5rem; }
+.mission-heading h2 { font-size: clamp(1.75rem, 3.3vw, 2.85rem); line-height: 1.12; letter-spacing: -.04em; }
+.page-home .mission-t { font: var(--t-korp)/1.6 var(--f-text); color: var(--text-dim); max-width: 33em; }
+.page-home .mission-t b { font-weight: 600; }
+.page-home .mission-s { font-size: var(--t-vtor); max-width: 34em; }
+.page-home #produkciya { padding-top: 0; }
+.page-home #produkciya > .sec-head { display: flex; align-items: baseline; flex-wrap: wrap; border-top: 1px solid var(--line-strong); padding-top: 1.5rem; margin-bottom: 2.5rem; gap: 1.2rem; }
+.page-home #produkciya > .sec-head .sec-title { flex: 1; font: 400 1.4rem/1.3 var(--f-text); letter-spacing: 0; }
+.page-home #produkciya > .sec-head .sec-title::before, .page-home #produkciya > .sec-head .sec-title::after { content: none; }
+.page-home #produkciya > .sec-head .sec-lead { flex: 0 1 30em; margin: 0; font-size: var(--t-vtor); }
+.page-home #produkciya > .sec-head .brk { display: none; }
+.page-home .groups { grid-template-columns: minmax(0, 1fr); gap: 0; background: transparent; border: 0; }
+.page-home .material-dossier { --mat: none; min-width: 0; border: 0; background: transparent; padding-block: 2rem 3.5rem; }
+.page-home .material-dossier + .material-dossier { padding-top: 4rem; border-top: 1px solid var(--line-strong); }
+.page-home .material-dossier .group-in { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 1.5rem 5rem; }
+.page-home .material-dossier .group-num { grid-column: 1; grid-row: 1; font: var(--t-sluzh)/1.4 var(--f-mono); color: var(--text-dim); align-self: start; }
+.page-home .material-dossier .group-num::before { content: none; }
+.page-home .material-dossier .group-num span { display: block; font: 700 clamp(2.5rem, 6vw, 5.3rem)/1.05 var(--f-display); letter-spacing: -.05em; color: var(--text); margin-top: .65rem; }
+.page-home .material-dossier .group-in > div:not([class]) { grid-column: 2; grid-row: 1 / 3; }
+.page-home .material-dossier .norms { grid-column: 2; grid-row: 3; background: transparent; background-image: none; border-radius: 0; border: 0; border-top: 1px solid var(--line-strong); padding: 1.3rem 0 0; box-shadow: none; }
+.page-home .material-dossier .norms ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 1.5rem; margin-block: 1rem 1.5rem; }
+.page-home .material-dossier .norms li { font-size: var(--t-vspom); margin: 0; }
+.material-evidence { grid-column: 1; grid-row: 2 / 4; margin: 0; align-self: start; }
+.material-evidence img { width: 100%; height: auto; border-radius: var(--r-4); }
+.material-evidence figcaption { border-top: 1px solid var(--line-strong); margin-top: 1rem; padding-top: .7rem; font: var(--t-mark)/1.5 var(--f-mono); color: var(--text-dim); }
+.material-specs { border-block: 1px solid var(--line-strong); margin-top: 1.5rem; }
+.material-specs summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; list-style: none; padding-block: 1rem; min-height: 48px; color: var(--text); font-size: var(--t-vtor); }
+.material-specs summary::-webkit-details-marker { display: none; }
+.material-specs summary span { font: 1.7rem/1 var(--f-text); transition: transform .25s; }
+.material-specs[open] summary span { transform: rotate(45deg); }
+.material-specs-body { padding-bottom: 1rem; }
+.material-specs-body .prop:first-child { border-top: 0; }
+.geo-specimen { grid-column: 1; grid-row: 2 / 4; position: relative; min-height: 22rem; display: grid; align-content: end; padding: 1.5rem; overflow: hidden; border: 1px solid var(--line-strong); border-radius: var(--r-4); background: #192021; }
+.geo-specimen-grid { position: absolute; width: 110%; height: 140%; left: -5%; top: -28%; transform: perspective(550px) rotateX(42deg) rotateZ(-23deg); background: repeating-linear-gradient(0deg, transparent 0 30px, #86918a 30px 33px), repeating-linear-gradient(90deg, transparent 0 30px, #86918a 30px 33px); mask-image: linear-gradient(#000 25%, transparent 85%); }
+.geo-specimen > span { position: relative; color: var(--concrete); font: var(--t-vtor)/1.4 var(--f-mono); }
+.page-home .material-dossier[data-material='geo'] .group-in { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+.page-home .material-dossier[data-material='geo'] .group-in > div:not([class]), .page-home .material-dossier[data-material='geo'] .norms { grid-column: 1; }
+.page-home .material-dossier[data-material='geo'] .group-num, .page-home .material-dossier[data-material='geo'] .geo-specimen { grid-column: 2; }
+.page-home .material-dossier[data-material='geo'] .group-num span { font-size: clamp(2rem, 4.5vw, 4rem); }
+.page-home .anchor-row { margin-top: 1rem; }
+.page-home .audience-section { border: 0; background: transparent; padding-top: 4rem; }
+.page-home .audience-section .sec-head { border-bottom: 1px solid var(--line-strong); padding-bottom: 2rem; }
+.page-home .audience-section .sec-num--big, .page-home .principles-section .sec-num--big { color: var(--text-dim); font: var(--t-sluzh)/1.5 var(--f-mono); letter-spacing: .04em; }
+.page-home .audience-section .list-rows { border: 0; background: transparent; box-shadow: none; border-radius: 0; }
+.page-home .audience-section .list-row { padding-block: 1.6rem; background: transparent; }
+.page-home .audience-section .list-key { font-size: var(--t-karta); }
+.page-home .objects { margin-top: 2rem; padding-block: 4rem; background: #e7e9ed; color: #19201e; --text: #19201e; --text-dim: #454e49; --text-quiet: #454e49; --concrete: #19201e; --line: #b0b8af; --line-strong: #8d988e; --okno-bg: transparent; }
+.page-home .objects .wrap-wide { width: min(100% - 2.5rem, var(--wrap)); }
+.page-home .objects .chapter { grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr); gap: 5rem; }
+.page-home .objects .sec-title { font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -.05em; }
+.page-home .objects .road-list { border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+.page-home .objects .road { display: block; padding: 1.5rem 0; background: transparent; }
+.page-home .objects .road:first-child { padding-top: 0; }
+.page-home .objects .road-code { font: 600 clamp(1.5rem, 2.6vw, 2.3rem)/1.15 var(--f-text); letter-spacing: -.035em; }
+.page-home .objects .road-place { margin-top: .5rem; }
+.page-home .objects .road-km { margin-top: .9rem; justify-content: start; gap: .5rem 1rem; }
+.page-home .objects .km-mark { color: #454e49; }
+.page-home .objects .brk { color: #454e49; }
+.page-home .objects .btn-pink { background: #19201e; border-color: #19201e; color: #f0f2ed; }
+.page-home .objects :focus-visible { outline-color: #19201e; }
+.page-home .objects + .photo-band { width: min(100% - 2.5rem, var(--wrap)); margin: 3rem auto 0; border: 0; border-radius: var(--r-4); }
+.page-home .objects + .photo-band img { height: clamp(220px, 30vw, 390px); }
+.page-home .alliance-section { background: transparent; border: 0; }
+.page-home .alliance-section .members { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr); }
+.page-home .alliance-section .member { background: transparent; box-shadow: none; border: 0; border-top: 1px solid var(--line-strong); border-radius: 0; padding: 1.5rem 1.5rem 0 0; }
+.page-home .alliance-section .member:first-child { border-top: 2px solid var(--concrete); }
+.page-home .principles-section { padding-top: 3rem; }
+.page-home #priznanie { border: 0; background: transparent; }
+.page-home #priznanie .sec-head--center { max-width: none; text-align: left; justify-items: start; }
+.page-home #priznanie .award { border-radius: var(--r-4); }
+.page-home .documents-section > .wrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr); gap: 2rem 5rem; }
+.page-home .documents-section .sec-head { display: block; }
+.page-home .documents-section .sec-title { margin-block: 1rem; }
+.page-home .documents-section .sec-more { grid-column: 2; margin: 0; }
+.page-home .request { border-radius: var(--r-4) var(--r-4) 0 0; padding-top: 4rem; }
+.page-home .request .sec-title { font-size: clamp(2rem, 4vw, 3.6rem); max-width: 9em; letter-spacing: -.045em; }
+.foot .footer-signature { text-decoration: none; display: flex; justify-content: space-between; align-items: baseline; font: 800 clamp(2.5rem, 10.8vw, 9.5rem)/1 var(--f-display); letter-spacing: -.065em; padding-bottom: 2.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line-strong); color: var(--concrete); }
+.foot .footer-signature span { font: 400 1em/1 var(--f-text); }
+.page-head--split { padding-top: clamp(3rem, 6vw, 6rem); }
+.page-head--split .wrap { position: relative; }
+.page-head--split h1 { letter-spacing: -.045em; }
+.page-head--split .crumbs { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line-strong); }
+@media (hover: hover) {
+  .material-switch button:hover, .material-specs summary:hover { color: var(--pink); }
+  .page-home .objects .btn-pink:hover { background: #35453b; border-color: #35453b; color: #fff; }
+}
+@media (max-width: 1080px) {
+  .req-grid > form { order: 0; }
+  .hero-material h1 { font-size: clamp(2.4rem, 5.4vw, 4.5rem); }
+  .material-hero-grid { gap: 1.5rem; }
+  .hero-material .hero-cta { align-items: start; flex-direction: column; gap: .7rem; }
+  .hero-verification p { grid-template-columns: minmax(0, 1fr); gap: .5rem; }
+  .page-home .material-dossier .group-in, .page-home .objects .chapter, .page-home .documents-section > .wrap { column-gap: 2.5rem; }
+  .page-home .material-dossier .norms ul { grid-template-columns: minmax(0, 1fr); }
+  .page-home .mission-in { gap: 1.5rem 3rem; }
+}
+@media (max-width: 760px) {
+  .material-index { display: none; }
+  .material-hero-grid { grid-template-columns: minmax(0, 1fr); padding-top: 2rem; gap: 2.5rem; }
+  .hero-material h1 { font-size: clamp(2rem, 9.45vw, 4.5rem); }
+  .material-tagline { font-size: 1.8rem; margin-top: 1.3rem; }
+  .material-tagline br { display: none; }
+  .hero-material .hero-lead { max-width: 32em; }
+  .hero-material .hero-cta { flex-direction: row; align-items: center; gap: 1rem 1.5rem; }
+  .material-model { max-width: 560px; width: 100%; margin-inline: auto; }
+  .road-model { margin-block: -.5rem; }
+  .material-model-note { min-height: 0; }
+  .hero-verification { align-items: start; gap: 1rem; flex-direction: column; }
+  .page-home .facts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+  .page-home .fact { border: 0; padding: 0; }
+  .page-home .fact-n { font-size: clamp(1.7rem, 5.3vw, 2.5rem); }
+  .page-home .fact-l { font-size: var(--t-vspom); }
+  .page-home .mission-in { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .mission-heading { grid-row: auto; }
+  .mission-heading h2 { max-width: 15em; }
+  .page-home #produkciya > .sec-head { gap: 1rem; }
+  .page-home #produkciya > .sec-head .sec-lead { flex-basis: 100%; }
+  .page-home .material-dossier .group-in,
+  .page-home .material-dossier[data-material='geo'] .group-in { display: flex; flex-direction: column; gap: 1.5rem; }
+  .page-home .material-dossier .group-in > * { width: 100%; min-width: 0; }
+  .page-home .material-dossier .group-num { white-space: normal; overflow-wrap: break-word; }
+  .page-home .material-dossier .group-num span,
+  .page-home .material-dossier[data-material='geo'] .group-num span { font-size: clamp(min(2rem, 8.5vw), 8.5vw, 4rem); }
+  .material-evidence { max-width: 500px; align-self: start; }
+  .geo-specimen { min-height: 16rem; }
+  .page-home .material-dossier .group-use { max-width: none; }
+  .page-home .material-dossier .norms { padding-top: 1rem; }
+  .page-home .material-dossier .norms ul { display: block; }
+  .page-home .material-dossier .norms li { margin-bottom: .8rem; }
+  .page-home .objects .chapter { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+  .page-home .objects .chapter-head { position: static; }
+  .page-home .objects { padding-block: 2.5rem; }
+  .page-home .objects .road { padding-block: 1.2rem; }
+  .page-home .objects .road-code { font-size: 1.8rem; }
+  .page-home .alliance-section .members { grid-template-columns: minmax(0, 1fr); }
+  .page-home .alliance-section .member { padding-right: 0; }
+  .page-home #priznanie .award { display: grid; grid-template-columns: minmax(0, 5.5rem) minmax(0, 1fr); gap: 1.2rem; padding: 1.2rem; }
+  .page-home #priznanie .award-scan { grid-column: 1; grid-row: 1 / 3; max-width: none; }
+  .page-home #priznanie .award-scan-cap { margin-top: .5rem; padding-top: 0; }
+  .page-home #priznanie .award-body { display: contents; }
+  .page-home #priznanie .award-body > .eyebrow { grid-column: 2; margin: 0; }
+  .page-home #priznanie .award-body h3 { grid-column: 2; grid-row: 2; margin: 0; font-size: clamp(1rem, 4.8vw, 1.35rem); align-self: start; }
+  .page-home #priznanie .award-body > p, .page-home #priznanie .award-facts { grid-column: 1 / -1; }
+  .page-home .documents-section > .wrap { display: block; }
+  .page-home .documents-section .sec-more { margin-top: 1.5rem; }
+  .foot .footer-signature { font-size: 10.4vw; padding-bottom: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .road-surface, .road-reinforcement, .material-switch button, .material-specs summary span { transition: none; }
+}
+@media print {
+  .material-model, .material-switch, .geo-specimen, .foot .footer-signature { text-decoration: none; display: none !important; }
+  .material-hero-grid, .page-home .material-dossier .group-in, .page-home .mission-in, .page-home .objects .chapter, .page-home .documents-section > .wrap { display: block; }
+  .material-specs-body { content-visibility: visible !important; }
+  .material-specs::details-content { display: block; content-visibility: visible; height: auto; }
+  .page-home .objects, .page-home .objects * { background: transparent !important; color: #000 !important; }
+  .page-home .facts-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* Предметная подача материалов. Общий слой, 11.09.2026. */
+:root { --t-sluzh: .875rem; --t-mark: .8125rem; }
+.btn-pink { box-shadow: none; }
+.material-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.06fr); padding-block: 2rem 2.5rem; gap: 2rem; }
+.material-visual { aspect-ratio: 4 / 3; position: relative; overflow: hidden; border-radius: var(--r-4); background: #101113; }
+.material-visual picture, .material-visual img { display: block; width: 100%; height: 100%; }
+.material-visual img { object-fit: cover; }
+.material-visual picture[hidden] { display: none; }
+.material-visual picture { animation: specimen-in .45s ease-out both; }
+@keyframes specimen-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.material-model { padding: 1rem 1.2rem .5rem; border: 1px solid var(--line); border-radius: var(--r-4); background: #111315; }
+.material-model-head { border: 0; padding: 0 0 1rem; }
+.material-model-head .material-model-index { font: .8125rem/1.5 var(--f-mono); color: var(--text-dim); }
+.material-model-note { min-height: 4.5em; font-family: var(--f-text); padding-inline: .4rem; }
+.material-tagline { margin-top: 1.5rem; }
+.hero-material .hero-lead { max-width: 27em; }
+.hero-material .hero-cta { align-items: flex-start; flex-direction: column; gap: 1rem; }
+.hero-material .hero-cta .btn-pink { padding-inline: 1.5rem; }
+.hero-material .hero-cta .btn-line { padding-block: .3rem; }
+.page-home .facts { border-top: 1px solid var(--line); padding-block: 2rem; }
+.page-home .fact-n { font-weight: 700; letter-spacing: -.04em; }
+.page-home .fact-l { max-width: 17em; }
+.page-home .mission { position: relative; padding-top: 0; margin-top: 3rem; }
+.mission-landscape { position: relative; margin: 0; }
+.mission-landscape picture, .mission-landscape img { display: block; width: 100%; }
+.mission-landscape img { height: clamp(260px, 34vw, 500px); object-fit: cover; }
+.mission-landscape figcaption { position: absolute; right: max(1.5rem, calc((100vw - 1320px) / 2)); bottom: 1rem; border-radius: var(--r-1); background: #0d0e10; color: var(--text); font: .8125rem/1.5 var(--f-mono); padding: .5rem .75rem; }
+.page-home .mission-in { padding-top: 3.5rem; }
+.mission-heading h2 { font-size: clamp(2rem, 3.7vw, 3.25rem); }
+.page-home .material-dossier .group-in { column-gap: 3rem; }
+.page-home .material-dossier .norms .btn { width: auto; min-width: 0; padding-inline: 1.5rem; }
+.page-home .material-dossier .norms li { font-family: var(--f-text); line-height: 1.5; }
+.page-home .material-dossier .group-num span { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+.geo-specimen { display: block; min-height: 0; padding: 0; margin: 0; background: #111315; }
+.geo-specimen picture, .geo-specimen img { display: block; width: 100%; height: auto; }
+.geo-specimen figcaption { font: .8125rem/1.5 var(--f-mono); padding: 1rem 1.2rem; border-top: 1px solid var(--line); color: var(--text-dim); }
+.page-home .audience-section > .wrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.3fr); gap: 3rem; align-items: start; }
+.page-home .audience-section .sec-head { display: block; margin: 0; border: 0; position: sticky; top: 7rem; }
+.page-home .audience-section .sec-title { margin-block: 1rem 1.5rem; font-size: clamp(1.8rem, 3vw, 2.6rem); }
+.page-home .audience-section .sec-lead { margin: 0; }
+.page-home .audience-section .list-row { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .6rem 1rem; padding: 1.4rem 0; border-top: 1px solid var(--line-strong); border-bottom: 0; }
+.page-home .audience-section .list-num { grid-column: 1; grid-row: 1; }
+.page-home .audience-section .list-key, .page-home .audience-section .list-val, .page-home .audience-section .list-meta { grid-column: 2; }
+.page-home .audience-section .list-meta { text-align: left; margin-top: .2rem; }
+.page-home .objects { --text: #1b2026; --text-dim: #46505c; --concrete: #1b2026; --line: #bdc3cb; --line-strong: #8a939f; }
+.page-home .objects .road-code { font-size: clamp(1.5rem, 2.6vw, 2.35rem); }
+.page-home .alliance-section { padding-block: 4rem 2rem; }
+.page-home .principles-section { padding-block: 2rem 4rem; }
+.page-home .principles-section .sec-head { margin-bottom: 2rem; }
+.page-home .principles-section .sec-title { font-size: clamp(1.8rem, 3vw, 2.7rem); }
+.page-home .principles-section .aud { padding: 1.8rem; }
+.page-home #priznanie { padding-block: 3.5rem; }
+.page-home .plogos { gap: 1rem; }
+.page-home .plogo { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: .35rem 1rem; align-content: start; align-items: center; padding: 1.25rem; text-align: left; }
+.page-home .plogo-tile { grid-row: 1 / 3; width: 4.5rem; height: 4.5rem; padding: .5rem; margin: 0; }
+.page-home .plogo-name, .page-home .plogo-note { margin: 0; }
+.page-home .plogo-note { font-size: .875rem; }
+.page-home .request { margin-top: 3rem; padding-bottom: 4rem; background: #17191d; border-top: 1px solid var(--line-strong); }
+.request form { padding: 1.7rem; background: #0f1114; border: 1px solid var(--line-strong); border-radius: var(--r-4); }
+.request .req-note { margin-top: 0; }
+.request .field input, .request .field textarea { background: #171a1f; }
+.page-head .eyebrow { color: var(--text-dim); }
+.foot { padding-top: 3rem; }
+.foot .footer-signature { padding-bottom: 1.8rem; font-size: clamp(2.5rem, 9vw, 8rem); }
+@media (hover: hover) {
+  .btn-pink:hover { box-shadow: none; transform: translateY(-2px); }
+  .page-home .audience-section a.list-row:hover .list-key { color: var(--pink-hover); }
+  .page-home .plogo:hover { transform: none; }
+}
+@media (max-width: 1080px) {
+  .material-hero-grid { gap: 1.5rem; }
+  .page-home .audience-section > .wrap { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 2rem; }
+  .page-home .plogo { grid-template-columns: 3rem minmax(0, 1fr); padding: 1rem; }
+  .page-home .plogo-tile { width: 3rem; height: 3rem; padding: .35rem; }
+}
+@media (max-width: 760px) {
+  .material-hero-grid { grid-template-columns: minmax(0, 1fr); padding-top: 1.5rem; gap: 2rem; }
+  .hero-material .hero-cta { gap: .8rem; }
+  .material-model { padding: 1rem; max-width: none; }
+  .material-model-note { min-height: 0; }
+  .page-home .mission { margin-top: 1rem; padding-bottom: 3rem; }
+  .page-home .mission-in { padding-top: 2rem; }
+  .mission-landscape img { height: 260px; }
+  .mission-landscape figcaption { right: 1rem; bottom: .7rem; font-size: .75rem; }
+  .page-home .audience-section > .wrap { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .page-home .audience-section .sec-head { position: static; }
+  .page-home .audience-section .list-row { gap: .6rem .75rem; }
+  .page-home .plogo { grid-template-columns: 4rem minmax(0, 1fr); }
+  .page-home .plogo-tile { width: 4rem; height: 4rem; }
+  .page-home .request { margin-top: 1rem; }
+  .request form { padding: 1.1rem; }
+  .foot .footer-signature { font-size: 10.4vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .material-visual picture { animation: none; }
+}
+@media print {
+  .mission-landscape { display: none; }
+  .page-home .audience-section > .wrap { display: block; }
+  .page-home .audience-section .sec-head { position: static; }
+  .request form { display: none; }
+}
+
+/* Длинные технические обозначения и увеличение текста. */
+.road-list, .norms ul { grid-template-columns: minmax(0, 1fr); }
+.road-list > *, .norms li, .list-row-docs, .list-row-docs > * { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+
+.km-mark { white-space: normal; max-width: 100%; overflow-wrap: anywhere; }
+.award-details { border-top: 1px solid var(--line-strong); margin-top: 1.5rem; }
+.award-details summary { cursor: pointer; padding-block: 1rem; min-height: 48px; }
+.award-details .award-facts { margin: 0; }
+.company-strip { border-block: 1px solid var(--line-strong); padding-block: 1.8rem; }
+.company-strip .wrap { display: flex; gap: 1.5rem 3rem; align-items: center; flex-wrap: wrap; }
+.company-strip p { font-weight: 600; margin-right: auto; }
+.company-strip p span { display: block; font: .8125rem/1.6 var(--f-mono); color: var(--text-dim); }
+@media (max-width:760px) {
+  .page-home .plogos { grid-template-columns: minmax(0, 1fr); }
+  .page-home .plogo-tile img { max-height: 44px; }
+  .page-home #priznanie .award { display: block; padding: 1.3rem; }
+  .page-home #priznanie .award-body { display: block; }
+  .page-home #priznanie .award-scan { float: none; display: flex; align-items: center; gap: 1rem; width: auto; margin: 0 0 1.2rem; }
+  .page-home #priznanie .award-body .eyebrow { margin-bottom: .7rem; }
+  .page-home #priznanie .award-body h3 { font: 600 1.35rem/1.25 var(--f-text); hyphens: none; }
+  .page-home #priznanie .award-body > p { clear: both; margin-top: 1.2rem; }
+  .request .req-gets { display: none; }
+  .page-home .request .req-grid { gap: 1.5rem; }
+  .page-home .material-dossier .group-in > div:not([class]) > p:first-child:has(.mark-plant) { display: none; }
+  .page-home .material-dossier .group-in h3 { font: 600 1.5rem/1.2 var(--f-text); }
+  .company-strip .wrap { align-items: start; flex-direction: column; gap: 1rem; }
+}
+@media print { .award-details::details-content { display: block; content-visibility: visible; } }
+
+@media (min-width:761px) { .page-home #priznanie .award { grid-template-columns: minmax(0,140px) minmax(0,1fr); gap: 2.5rem; } }
+@media (max-width:760px) { .page-home #priznanie .award-body h3 { clear: both; padding-top: 0; font-size: 1.25rem; } }
+
+@media (max-width:760px) { .page-home #priznanie .award-scan-in { flex: 0 0 4rem; width: 4rem; } .page-home #priznanie .award-scan-cap { margin: 0; } }

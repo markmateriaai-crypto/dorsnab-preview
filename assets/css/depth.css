@@ -1,0 +1,78 @@
+/* Свет и глубина поверхностей. */
+@media screen {
+:root {
+  --okno-fill: linear-gradient(145deg, rgba(255, 255, 255, .03), transparent 54%);
+  --okno-shadow: inset 0 1px 0 rgba(226, 233, 242, .055),
+    0 8px 16px -12px rgba(2, 4, 7, .8),
+    0 28px 50px -30px rgba(2, 4, 7, .9);
+}
+.page-head {
+  background: radial-gradient(ellipse 68% 125% at 90% 0%, rgba(125, 137, 152, .11), transparent 77%),
+    linear-gradient(165deg, #14171b, #0d0e10 80%);
+  box-shadow: inset 0 -1px 0 rgba(2, 4, 7, .6);
+}
+.page-head::before { background: none; }
+.page-home .mission {
+  background: radial-gradient(ellipse 70% 48% at 0% 100%, rgba(125, 137, 152, .07), transparent 78%);
+}
+.material-evidence img, .geo-specimen {
+  box-shadow: 0 10px 20px -14px rgba(2, 4, 7, .9), 0 32px 54px -34px rgba(2, 4, 7, .75);
+}
+.page-home .objects {
+  background: linear-gradient(125deg, #f0f2f5, #e7e9ed 48%, #dfe3e9);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .85),
+    0 14px 24px -18px rgba(2, 4, 7, .9),
+    0 40px 64px -40px rgba(2, 4, 7, .7);
+}
+.page-home .documents-section {
+  background: radial-gradient(ellipse 72% 90% at 0% 45%, rgba(125, 137, 152, .075), transparent 78%);
+}
+.page-home .request, .request {
+  background: radial-gradient(ellipse 85% 70% at 0% 0%, rgba(125, 137, 152, .065), transparent 75%),
+    linear-gradient(150deg, #17191d, #111316);
+  box-shadow: inset 0 1px 0 rgba(226, 233, 242, .035);
+}
+.request form {
+  box-shadow: inset 0 1px 0 rgba(226, 233, 242, .05),
+    0 12px 24px -16px rgba(2, 4, 7, .85),
+    0 36px 64px -34px rgba(2, 4, 7, .75);
+}
+.foot {
+  background: linear-gradient(180deg, #101215, #0d0e10 16rem);
+  box-shadow: inset 0 12px 28px -22px rgba(2, 4, 7, .75);
+}
+.page-home .hero-material {
+  background:
+    radial-gradient(ellipse 58% 63% at 82% 21%, rgba(125, 137, 152, .14), transparent 78%),
+    radial-gradient(ellipse 72% 85% at -12% -16%, rgba(109, 120, 135, .13), transparent 76%),
+    linear-gradient(180deg, #101215 0%, #0d0e10 87%);
+}
+.page-home .hero-material .material-model {
+  background: linear-gradient(145deg, #1e2227 0%, #171a1e 36%, #111315 78%);
+  border-color: #3f4650 #292e35 #24282e #363d46;
+  box-shadow: inset 0 1px 0 rgba(226, 233, 242, .065), 0 12px 22px -12px rgba(2, 4, 7, .85), 0 36px 72px -28px rgba(2, 4, 7, .78);
+}
+.page-home .hero-material .material-visual::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, .45), inset 0 0 0 1px rgba(218, 227, 240, .035);
+}
+.page-home .hero-material .hero-verification {
+  border-top-color: #353c46;
+}
+.page-home .hero-material .facts {
+  background: linear-gradient(180deg, #101216, #0d0e10);
+  border-top-color: #30353d;
+  box-shadow: inset 0 1px 0 rgba(213, 225, 239, .025), 0 -18px 45px -22px rgba(2, 4, 7, .52);
+}
+@media (max-width:760px) {
+  .page-home .hero-material {
+    background:
+      radial-gradient(ellipse 125% 38% at 105% 45%, rgba(125, 137, 152, .12), transparent 76%),
+      radial-gradient(ellipse 110% 30% at -30% 0%, rgba(109, 120, 135, .13), transparent 78%),
+      #0d0e10;
+  }
+  .page-home .hero-material .material-model {
+    box-shadow: inset 0 1px 0 rgba(226, 233, 242, .065), 0 10px 20px -12px rgba(2, 4, 7, .85), 0 25px 42px -24px rgba(2, 4, 7, .78);
+  }
+}
+}
