@@ -1,4 +1,7 @@
 /* Главная: промышленная обложка, экспозиция материала, светлый лист запроса. */
+@media (min-width:761px) {
+  .tyre-hero-image img { object-position: 70% 0; }
+}
 .tyre-hero h1 { max-width: none; line-height: .98; letter-spacing: -.045em; }
 .tyre-hero h1 > span { color: var(--text); }
 .hero-from { font-size: clamp(82px,9.5vw,142px); }
